@@ -19,8 +19,7 @@
       </item>
     </swiper-item>
   </swiper>
-
-
+  
   <view class='info' id='info-box'>
     <view class="identity">
       <view class='name'>{{cat.name}}</view>

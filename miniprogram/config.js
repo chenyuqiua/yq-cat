@@ -129,16 +129,16 @@ module.exports = {
     feedback: {
       share_tip: "信息反馈",
       feedback_tip_title: "留下反馈",
-      feedback_tip: "每一条反馈我们都会认真看滴",
+      feedback_tip: "每一条反馈我们都会认真看观看",
       new_cat_tip_title: "新的猫猫",
       new_cat_tip: "提交猫谱中没有的猫猫信息，给猫猫上户口~",
       contract_tip_title: "更多联系",
-      contract_tip: "有关猫猫信息添加、小程序的建议、照片维权、猫猫领养咨询等事项，请关注笃行志愿服务队公众号后留言，或邮件：dxzyfwd@163.com",
+      contract_tip: "有关猫猫信息添加、小程序的建议、照片维权、猫猫领养咨询等事项，请发送邮件：lananabc@163.com",
     },
     // 开发团队页，pages/info/devTeam/devTeam
     dev_team: {
       share_tip: "开发团队",
-      team: "程序开发：渔政、蓝卷、XD、zJ、ArcherJo、yw\n资料维护：Lo\n初期资料整理：hehe、玥琪、大米\n以及各校区猫群的小伙伴~\n非常欢迎新朋友加入设计开发哇~！",
+      team: "程序开发：邓正成、周仕江、刘犇",
     },
     // 识猫页，pages/recognize/recognize
     recognize: {

@@ -3,7 +3,7 @@
   width: 750rpx;
   display: flex;
   flex-direction: row;
-  padding: 0 20rpx;
+  padding: 20rpx;
   white-space: nowrap;
   box-sizing: border-box;
 }

@@ -17,7 +17,7 @@
           <view class='footer' wx:if="{{item.contactInfo}}"><text user-select='true'>联系方式：{{item.contactInfo}}</text></view>
         </view>
       </view>
-      <view wx:if="{{!item.repliable}}" class='noReplyLabel'>对方没有订阅回复通知，无法回复</view>
+      <view wx:if="{{!item.repliable}}" class='noReplyLabel'>对方没有关注，无法回复</view>
       <view wx:elif="{{item.replied}}" class='bubble2'>
         <view class='date'><text user-select='true'>{{item.replyDateStr}}</text></view>
         <view class='name'><text user-select='true'>管理员的回复</text></view>

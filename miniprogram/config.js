@@ -61,7 +61,7 @@ module.exports = {
     // 关于页，pages/info/info
     info: {
       share_tip: "关于",
-      slogan: "拍照记录校园内猫猫的成长轨迹",
+      slogan: "拍照帮助校园内流浪猫",
     },
     // 猫猫详情页，pages/genealogy/detailCat/detailCat
     detail_cat: {

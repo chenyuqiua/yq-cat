@@ -76,7 +76,8 @@ image {
   border-bottom-right-radius: 10rpx;
 }
 .button.delete {
-  color: red;
+  color: #fff;
+  background-color: #e47470;
 }
 .button.delete.marked {
   border-color: var(--color-red-dark);

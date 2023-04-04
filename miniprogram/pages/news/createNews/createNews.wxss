@@ -5,6 +5,14 @@ page {
   box-sizing: border-box;
 }
 
+.label-block {
+  width: 12rpx;
+  height: 24rpx;
+  background-color: var(--color-primary-dark);
+  display: inline-block;
+  border-radius: 6rpx;
+}
+
 .label {
   font-size: 30rpx;
   font-weight: 600;
@@ -21,6 +29,7 @@ picker,
 textarea {
   width: 670rpx;
   border-bottom: 2rpx var(--color-primary) solid;
+  border-radius: 18rpx;
   background-color: var(--color-white-dark);
   padding: 15rpx;
   color: var(--color-black-light);

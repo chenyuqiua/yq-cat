@@ -30,7 +30,6 @@
     </view>
   </block>
   <view class='bottom-bar'>
-    <!-- <button class='' bindtap="requestSubscribeMessage">订阅通知</button> -->
     <button class='primary' bindtap="bindCheckMulti">批量审核</button>
   </view>
   

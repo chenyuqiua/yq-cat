@@ -1,5 +1,36 @@
 /* 下面开始猫卡布局 */
+.card .label {
+  display: inline-block;
+  text-align: left;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary-dark);
+  color: var(--color-black-light);
+  border-radius: 0 10rpx 10rpx 0;
+  padding: 10rpx;
+  font-size: 22rpx;
+  position: absolute;
+  top: 30rpx;
+  left: -17.5rpx;
+  z-index: 1;
+}
 
+.card .label::after {
+  position: absolute;
+  top: 100%;
+  right: auto;
+  left: 0;
+
+  border-style: solid;
+  border-width: 0 17.5rpx 17.5rpx 0;
+  border-color: transparent;
+  border-top-color: inherit!important;
+  background-color: transparent!important;
+  border-right-color: inherit!important;
+
+  content: '';
+  width: 0;
+  height: 0;
+}
 
 .card {
   margin: 30rpx 0;

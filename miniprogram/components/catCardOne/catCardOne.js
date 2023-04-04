@@ -1,5 +1,5 @@
 import config from "../../config";
-
+import { isManagerAsync } from "../../user";
 Component({
   /**
    * 组件的属性列表

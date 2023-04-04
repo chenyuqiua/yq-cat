@@ -6,7 +6,6 @@
 
 
 <scroll-view enable-flex='true' class='cards' style='height: {{heights.windowHeight - heights.filters}}px;' scroll-y='true' enable-back-to-top='true' bindscrolltolower='onRefresh' bindscroll='fScroll' lower-threshold='50'>
-
     <view class='news-box' wx:if='{{news != 0}}'>
         <view class='news title'>{{news.title}}</view>
         <view class="news row-container">
@@ -38,5 +37,4 @@
     <view class='verify-box' wx:if='{{err}}'>
         <view class='news err'>喵公告消失了？</view>
     </view>
-
 </scroll-view>

@@ -124,7 +124,7 @@ Page({
     this.setData({
       uploading: true
     })
-    await requestNotice('verify');
+    // await requestNotice('verify');
     wx.showLoading({
       title: config.text.add_photo.success_tip_title,
       mask: true,

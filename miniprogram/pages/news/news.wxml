@@ -1,3 +1,5 @@
+<homeSwiper images="{{images}}" />
+
 <view class='loading' wx:if='{{updateRequest}}'>
   <image src='/pages/public/images/system/loading.gif'></image>
 </view>

@@ -1,0 +1,61 @@
+<block wx:for='{{cats}}' wx:key="_id">
+  <view class='card' bindtap='clickCatCard' bindlongpress='bindManageCat' data-cat_id='{{item._id}}' data-index='{{index}}'>
+    <view class='label' wx:if="{{item.mphoto_new}}">{{text_cfg.genealogy.new_photo_tip}}</view>
+    <view class='image {{item.to_star? "to_star": ""}}'>
+      <image bindload="bindImageLoaded" mode='aspectFill' 
+        src='{{item.photo.photo_compressed || item.photo.photo_id}}' 
+        data-index="{{index}}"
+      ></image>
+      <view class='image-title' 
+        wx:if='{{!item.photo_count_best || item.photo_count_best === 0}}'
+      >
+        {{text_cfg.genealogy.no_photo_tip}}
+      </view>
+      <view class='image-title' wx:else>
+        {{item.photo.photo_id? (text_cfg.genealogy.photo_by_tip + (item.photo.photographer ||(item.photo.userInfo? item.photo.userInfo.nickName: text_cfg.genealogy.photo_by_unknow))): text_cfg.genealogy.photo_loading_tip}}
+      </view>
+    </view>
+    <view class='info' hover-class="hoverInfo">
+      <view class='line'>
+        <text class='name'>{{item.name}}</text>
+        <block wx:if='{{item.gender}}'>
+          <image mode='aspectFill' class='gender' wx:if='{{item.gender === "公"}}' src="/pages/public/images/card/card/male.png"></image>
+          <image mode='aspectFill' class='gender' wx:if='{{item.gender === "母"}}' src="/pages/public/images/card/card/female.png"></image>
+        </block>
+        <view wx:if='{{item.adopt}}' class='adopt'>{{adopt_desc[item.adopt]}}</view>
+        <view wx:if='{{item.to_star}}' class='to_star'>{{text_cfg.genealogy.to_star_tip}}</view>
+        <view class='popularity'>
+          <image src='/pages/public/images/card/card/pop.png'></image>
+          <text> {{item.popularity + (item.photo_count_total? item.photo_count_total * photoPopWeight: 0) }}</text>
+        </view>
+        <view class='comment' wx:if="{{item.comment_count}}">
+          <image src='/pages/public/images/card/card/comment.png'></image>
+          <text> {{item.comment_count}}</text>
+        </view>
+      </view>
+
+      <view class='line' wx:if="{{item.birthday}}">
+        <image mode='aspectFit' class='icon' src='/pages/public/images/card/card/birth.png'></image>
+        <text>{{item.birthday}}</text>
+      </view>
+      <view class='line'>
+        <image mode='aspectFit' class='icon' src='/pages/public/images/card/card/cat.png'></image>
+        <text class="characteristics">{{item.characteristics_string}}</text>
+      </view>
+      <view class='line' wx:if="{{item.habit}}">
+        <image mode='aspectFit' class='icon' src='/pages/public/images/card/card/heart.png'></image>
+        <text class="habit">{{item.habit}}</text>
+      </view>
+      <view class='line'>
+        <image mode='aspectFit' class='icon' src='/pages/public/images/card/card/pos.png'></image>
+        <text>{{(item.campus + item.area) || '-'}}</text>
+        <view class='index'><text decode='true'>&lt; {{index+1}}/{{cats_max}} &gt;</text></view>
+      </view>
+
+    </view>
+  </view>
+  <view wx:if="{{adStep && (index+1)%adStep===0}}" class="card-ad {{ad_show['ad-'+(index+1)]? '': 'hidden'}}">
+    <ad unit-id="{{ad.banner}}" ad-intervals="120"
+    bindload="adLoad" binderror="adError" bindclose="adClose" data-ad_id='ad-{{(index+1)}}'></ad>
+  </view>
+</block>

@@ -58,6 +58,7 @@ Page({
     // 科普部分
     this.setSciImgs();
   },
+  
   onShow: function () {
     // 切换自定义tab
     showTab(this);
@@ -177,7 +178,6 @@ Page({
   },
 
   // 科普轮播图相关代码
-
   async setSciImgs() {
     const sciImgList = await Promise.all(science_imgs.map(val => cloud.signCosUrl(val)));
     const cacheKey = 'sciImgStorage';
@@ -237,5 +237,4 @@ Page({
       url: '/pages/news/sciDetail/sciDetail?cate=' + cate + '&coverImgList=' + this.data.images,
     });
   },
-
 })

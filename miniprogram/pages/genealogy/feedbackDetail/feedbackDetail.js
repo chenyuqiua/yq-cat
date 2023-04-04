@@ -137,7 +137,8 @@ Page({
   },
   
   async askNotice() {
-    let repliable = await requestNotice('feedback'); // 请求订阅消息推送
+    // let repliable = await requestNotice('feedback'); // 请求订阅消息推送
+    let repliable = []; // 请求订阅消息推送
 
     const res = (await api.curdOp({
       operation: "update",

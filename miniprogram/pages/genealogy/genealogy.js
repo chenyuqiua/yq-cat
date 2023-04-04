@@ -32,7 +32,6 @@ const tipInterval = 24; // 提示间隔时间 hours
 const share_text = config.text.app_name + ' - ' + config.text.genealogy.share_tip;
 
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -72,13 +71,14 @@ Page({
     newsList: [],
     newsImage: "",
 
-    text_cfg: config.text
+    text_cfg: config.text,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
+    console.log("options", options);
     // 从缓存里读取options
     var fcampus = options.fcampus;
     if (!fcampus) {
@@ -411,29 +411,29 @@ Page({
     });
   },
 
-  bindImageLoaded(e) {
-    const idx = e.currentTarget.dataset.index;
-    this.setData({
-      [`cats[${idx}].imageLoaded`]: true
-    });
-  },
+  // bindImageLoaded(e) {
+  //   const idx = e.currentTarget.dataset.index;
+  //   this.setData({
+  //     [`cats[${idx}].imageLoaded`]: true
+  //   });
+  // },
 
   // 点击猫猫卡片
-  clickCatCard(e, isCatId) {
-    const cat_id = isCatId ? e : e.currentTarget.dataset.cat_id;
-    const index = this.data.cats.findIndex(cat => cat._id == cat_id);
-    const detail_url = '/pages/genealogy/detailCat/detailCat';
+  // clickCatCard(e, isCatId) {
+  //   const cat_id = isCatId ? e : e.currentTarget.dataset.cat_id;
+  //   const index = this.data.cats.findIndex(cat => cat._id == cat_id);
+  //   const detail_url = '/pages/genealogy/detailCat/detailCat';
 
-    if (index != -1) {
-      this.setData({
-        [`cats[${index}].mphoto_new`]: false
-      });
-    }
+  //   if (index != -1) {
+  //     this.setData({
+  //       [`cats[${index}].mphoto_new`]: false
+  //     });
+  //   }
 
-    wx.navigateTo({
-      url: detail_url + '?cat_id=' + cat_id,
-    });
-  },
+  //   wx.navigateTo({
+  //     url: detail_url + '?cat_id=' + cat_id,
+  //   });
+  // },
 
   // 开始计算各个东西高度
   getHeights() {
@@ -451,17 +451,17 @@ Page({
     });
   },
   // 管理员判断，其实可以存到global里
-  async bindManageCat(e) {
-    var res = await isManagerAsync();
-    if (res) {
-      const cat_id = e.currentTarget.dataset.cat_id;
-      wx.navigateTo({
-        url: '/pages/manage/addCat/addCat?cat_id=' + cat_id,
-      });
-      return;
-    }
-    console.log("not a manager");
-  },
+  // async bindManageCat(e) {
+  //   var res = await isManagerAsync();
+  //   if (res) {
+  //     const cat_id = e.currentTarget.dataset.cat_id;
+  //     wx.navigateTo({
+  //       url: '/pages/manage/addCat/addCat?cat_id=' + cat_id,
+  //     });
+  //     return;
+  //   }
+  //   console.log("not a manager");
+  // },
 
   ////// 下面开始新的filter //////
   // mask滑动事件catch

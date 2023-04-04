@@ -1,0 +1,40 @@
+<!-- 卡片 -->
+<view class="card1" wx:for="{{cats}}" wx:key="_id"
+ bindtap='clickCatCard' bindlongpress='bindManageCat' data-cat_id='{{item._id}}' data-index='{{index}}'>
+  <view class="card1_left">
+    <image src="{{item.photo.photo_id}}" mode="" />
+  </view>
+  <view class="card1_right">
+    <view class="card1_right_1">
+      <text>{{item.name}}</text>
+      <view>
+        <image src="/pages/public/images/card/card/male.png" mode="" />
+      </view>
+      <!-- <text>寻找领养中</text> -->
+    </view>
+    <view class="card1_right_2">
+      <view>
+        <image src="/pages/public/images/card/card/birth.png" mode="" />
+        <text>{{item.birthday}}</text>
+      </view>
+      <view>
+        <image src="/pages/public/images/card/card/cat.png" mode="" />
+        <text>{{item.characteristics}}</text>
+      </view>
+      <view>
+        <image src="/pages/public/images/card/card/heart.png" mode="" />
+        <text>{{item.habit}}</text>
+      </view>
+      <view>
+        <image src="/pages/public/images/card/card/pos.png" mode="" />
+        <text>{{item.area}}</text>
+      </view>
+    </view>
+    <view class="card1_right_3">{{item.tutorial}}</view>
+    <view class="card1_right_4">
+      <text wx:if='{{item.adopt}}' class='adopt'>{{adopt_desc[item.adopt]}}></text>
+      <image src="/pages/public/images/card/card/猫爪.png" mode="scaleToFill" />
+      <text>{{item.popularity + (item.photo_count_total? item.photo_count_total * photoPopWeight: 0) }}</text>
+    </view>
+  </view>
+</view>

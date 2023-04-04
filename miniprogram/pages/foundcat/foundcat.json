@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "catCardOne": "/components/catCardOne/catCardOne"
+  },
+  "navigationBarTitleText": "发现"
+}

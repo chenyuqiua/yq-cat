@@ -64,7 +64,7 @@ Page({
   },
 
   async refreshStatus(){
-    await this.requestSubscribeMessage();
+    // await this.requestSubscribeMessage();
     await this.reload();
   },
   

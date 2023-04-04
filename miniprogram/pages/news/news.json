@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "homeSwiper": "/components/homeSwiper/homeSwiper"
+  },
   "navigationBarTitleText": "猫抓板",
   "enablePullDownRefresh": true
 }

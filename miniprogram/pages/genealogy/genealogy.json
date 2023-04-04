@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "newsModal": "/components/newsModal/newsModal"
+    "newsModal": "/components/newsModal/newsModal",
+    "catCardOne": "/components/catCardOne/catCardOne",
+    "catCardTwo": "/components/catCardTwo/catCardTwo"
   },
   "disableScroll": true
 }

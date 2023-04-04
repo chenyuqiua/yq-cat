@@ -17,8 +17,15 @@ module.exports = {
     "selectedIconPath": "/pages/public/images/tabs/active/sci.png",
     "text": "猫抓板"
   },
+  // leaderboard: {
+  //   "pagePath": "pages/leaderboard/leaderboard",
+  //   "iconPath": "/pages/public/images/tabs/default/org.png",
+  //   "selectedIconPath": "/pages/public/images/tabs/active/org.png",
+  //   "text": "精选"
+  // },
+
   leaderboard: {
-    "pagePath": "pages/leaderboard/leaderboard",
+    "pagePath": "pages/foundcat/foundcat",
     "iconPath": "/pages/public/images/tabs/default/org.png",
     "selectedIconPath": "/pages/public/images/tabs/active/org.png",
     "text": "精选"

@@ -10,7 +10,6 @@
   </view>
   <view style='flex-basis:100%;'>
     <!-- 打开小程序 -->
-
     <view class="buttons" wx:if="{{canReward}}">
       <!-- 打开赞赏码 -->
       <button bindtap='openImg' style='flex-basis:100%;'>投喂码</button>

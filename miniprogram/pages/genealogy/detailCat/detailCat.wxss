@@ -94,8 +94,8 @@ swiper-item image {
   color: var(--color-black-light);
 }
 .popularity image {
-  height: 20rpx;
-  width: 35rpx;
+  height: 28rpx;
+  width: 30rpx;
 }
 
 .info .comment {
@@ -107,7 +107,7 @@ swiper-item image {
   color: var(--color-black-light);
 }
 .comment image {
-  height: 27rpx;
+  height: 30rpx;
   width: 27rpx;
 }
 

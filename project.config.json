@@ -37,7 +37,8 @@
     "showES6CompileOption": false,
     "useCompilerPlugins": false,
     "ignoreDevUnusedFiles": false,
-    "ignoreUploadUnusedFiles": false
+    "ignoreUploadUnusedFiles": false,
+    "condition": false
   },
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
@@ -172,7 +173,7 @@
     "ignore": [],
     "include": []
   },
-  "appid": "wx7a5f734b9df1a01e",
+  "appid": "wxedaef1d2e5e32aaf",
   "projectname": "zhongdamaopu",
   "libVersion": "2.24.7"
 }

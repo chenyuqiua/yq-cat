@@ -60,8 +60,8 @@
   
   <homeSwiper />
 
-  <catCardOne cats="{{cats}}" adopt_desc="{{adopt_desc}}" cats_max="{{catsMax}}"/>
-  <!-- <catCardTwo cats="{{cats}}" adopt_desc="{{adopt_desc}}" cats_max="{{catsMax}}"/> -->
+  <!-- <catCardOne cats="{{cats}}" adopt_desc="{{adopt_desc}}" cats_max="{{catsMax}}"/> -->
+  <catCardTwo cats="{{cats}}" adopt_desc="{{adopt_desc}}" cats_max="{{catsMax}}"/>
 
   <view class='loading' wx:if='{{!loadnomore}}'>
     <image src='/pages/public/images/system/loading.gif'></image>

@@ -1,7 +1,7 @@
 {
   "usingComponents": {
     "newsModal": "/components/newsModal/newsModal",
-    "catCardOne": "/components/catCardOne/catCardOne",
+    "catCardTwo": "/components/catCardTwo/catCardTwo",
     "homeSwiper": "/components/homeSwiper/homeSwiper"
   },
   "disableScroll": true

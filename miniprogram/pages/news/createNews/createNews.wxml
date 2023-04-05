@@ -9,8 +9,8 @@
     <view class='lengthTips'>字数：{{namelength}}/{{namemaxlength}}</view>
 
     <view class='label'>
-      标题：（必填）
       <view class="label-block"></view>
+      标题：（必填）
     </view>
     <input name='title' type='text' bindinput='bindInputTitle' maxlength='{{titlemaxlength}}'></input>
     <view class='lengthTips'>字数：{{titlelength}}/{{titlemaxlength}}</view>

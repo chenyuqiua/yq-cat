@@ -9,7 +9,7 @@ page {
 
   --color-gray-light: #f7f7fa;
   --color-gray-normal:#eeeeee;
-  --color-gray: #dddddd;
+  --color-gray: #dfdfee;
   --color-gray-dark: #bbbbbb;
   --color-gray-max: #888;
 

@@ -30,7 +30,8 @@ textarea {
   width: 670rpx;
   border-bottom: 2rpx var(--color-primary) solid;
   border-radius: 18rpx;
-  background-color: var(--color-white-dark);
+  /* background-color: var(--color-white-dark); */
+  background-color: var(--color-gray);
   padding: 15rpx;
   color: var(--color-black-light);
 }

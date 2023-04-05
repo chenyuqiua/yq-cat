@@ -56,18 +56,17 @@
 </scroll-view>
 
 <scroll-view enable-flex='1' class='cards' style='height: {{heights.windowHeight - heights.filters}}px;' scroll-y='true' enable-back-to-top='true' bindscrolltolower='onReachBottom' bindscroll='fScroll' lower-threshold='{{main_lower_threshold}}'>
-  
-  
-  <homeSwiper />
+  <!-- <homeSwiper /> -->
 
   <!-- <catCardOne cats="{{cats}}" adopt_desc="{{adopt_desc}}" cats_max="{{catsMax}}"/> -->
   <catCardTwo cats="{{cats}}" adopt_desc="{{adopt_desc}}" cats_max="{{catsMax}}"/>
 
   <view class='loading' wx:if='{{!loadnomore}}'>
-    <image src='/pages/public/images/system/loading.gif'></image>
+    <image class="image" src='/pages/public/images/system/loading.gif'></image>
   </view>
   <view class='loadnomore' wx:else>
-    <image src='/pages/public/images/system/nomore.png'></image>
+    <image class="image" src='/pages/public/images/system/nomore.png'></image>
+    <view class="bottom"></view>
   </view>
 </scroll-view>
 

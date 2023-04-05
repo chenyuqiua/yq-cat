@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "catCardOne": "/components/catCardOne/catCardOne"
+    "catCardOne": "/components/catCardOne/catCardOne",
+    "homeSwiper": "/components/homeSwiper/homeSwiper"
   },
   "navigationBarTitleText": "发现"
 }

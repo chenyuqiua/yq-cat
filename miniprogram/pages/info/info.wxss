@@ -22,10 +22,9 @@ page {
 
 .buttons .button {
   width: 330rpx;
-  height: 182rpx;
+  height: 330rpx;
   border-radius: 15rpx;
   box-shadow: 0rpx 0rpx 10rpx var(--color-gray-light);
-  margin-top: 30rpx;
 }
 
 /* 下面是旧的 */

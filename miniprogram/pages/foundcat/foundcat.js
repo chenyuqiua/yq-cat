@@ -82,7 +82,8 @@ Page({
       if (scene.startsWith('toC=')) {
         const cat_No = scene.substr(4);
         const db = cloud.database();
-        var cat_res = await db.collection('found_cat').where({
+        // var cat_res = await db.collection('found_cat').where({
+        var cat_res = await db.collection('cat').where({
           _no: cat_No
         }).field({
           _no: true
@@ -230,7 +231,8 @@ Page({
     loadingLock++;
     const nowLoadingLock = loadingLock;
     const db = cloud.database();
-    const cat = db.collection('found_cat');
+    // const cat = db.collection('found_cat');
+    const cat = db.collection('cat');
     const query = this.fGet();
     const cat_count = (await cat.where(query).count()).total;
 

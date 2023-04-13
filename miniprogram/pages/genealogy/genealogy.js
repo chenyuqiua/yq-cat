@@ -334,7 +334,6 @@ Page({
     // var new_cats = (await cat.where(query).orderBy('mphoto', 'desc').orderBy('popularity', 'desc').skip(cats.length).limit(step).get()).data
     var new_cats = (await cat.where(query).orderBy('mphoto', 'desc').orderBy('popularity', 'desc').skip(cats.length).limit(20).get()).data
     new_cats = shuffle(new_cats);
-    console.log("------------", new_cats);
 
     if (loadingLock != nowLoadingLock) {
       // 说明过期了

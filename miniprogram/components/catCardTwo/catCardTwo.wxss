@@ -3,19 +3,23 @@
   margin-top: 20rpx;
   display: flex;
   border: 3px solid #f8f7fa;
-  border-radius: 10rpx;
+  border-radius: 20rpx;
   box-shadow: 0rpx 0rpx 20rpx 0rpx #ebe9ef;
+  box-sizing: border-box;
+  padding-right: 60rpx;
 }
 .card1 .card1_left {
-  width: 40%;
+  width: 45%;
+  height: 100%;
 }
 .card1 .card1_left image {
   width: 100%;
   height: 100%;
   border-radius: 15rpx;
+  object-fit: cover;
 }
 .card1 .card1_right {
-  width: 60%;
+  width: 55%;
   margin-left: 30rpx;
 }
 .card1 .card1_right .card1_right_1 {
@@ -47,12 +51,11 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .card1 .card1_right .card1_right_2 view {
-  margin-right: 60rpx;
   width: 150rpx;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 .card1 .card1_right .card1_right_2 view text {
@@ -65,19 +68,6 @@
   height: 22rpx;
   margin-right: 10rpx;
 }
-.card1 .card1_right .card1_right_2 view:nth-child(2) {
-  margin-left: -30rpx;
-}
-.card1 .card1_right .card1_right_2 view:nth-child(3),
-.card1 .card1_right .card1_right_2 view:nth-child(4) {
-  margin-top: -20rpx;
-}
-.card1 .card1_right .card1_right_2 view:nth-child(3) {
-  margin-right: 32rpx;
-}
-.card1 .card1_right .card1_right_2 view:nth-child(4) {
-  margin-left: 60srpx;
-}
 .card1 .card1_right .card1_right_3 {
   width: 400rpx;
   color: #717171;
@@ -85,7 +75,12 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-bottom: -10rpx;
+  margin-bottom: -5rpx;
+}
+.card1 .card1_right .card1_right_4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .card1 .card1_right .card1_right_4 text:nth-child(1) {
   font-size: 20rpx;
@@ -94,16 +89,15 @@
   padding: 4rpx 12rpx;
   border-radius: 15rpx;
 }
-.card1 .card1_right .card1_right_4 image {
-  position: relative;
-  bottom: 57rpx;
-  margin-left: 300rpx;
+.card1 .card1_right .card1_right_4 view:nth-child(2) {
+  margin-right: 20rpx;
+  margin-top: 2rpx;
+}
+.card1 .card1_right .card1_right_4 view:nth-child(2) image {
   width: 30rpx;
   height: 28rpx;
 }
-.card1 .card1_right .card1_right_4 text:nth-child(3) {
-  position: relative;
-  bottom: 57rpx;
+.card1 .card1_right .card1_right_4 view:nth-child(2) text {
   margin-left: 8rpx;
   font-size: 28rpx;
 }

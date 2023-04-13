@@ -276,7 +276,7 @@ scroll-view {
 
 #find-adopt .logo {
   width: 99rpx;
-  height: 50rpx;
+  height: 100rpx;
   display: block;
 }
 

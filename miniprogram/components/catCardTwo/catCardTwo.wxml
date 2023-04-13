@@ -38,8 +38,11 @@
         <text class='adopt'>{{adopt_desc[item.adopt]}}</text>
       </view>
       <!-- <text bindtap='clickCatCar'>寻找领养中</text> -->
+      <view>
       <image src="/pages/public/images/card/card/猫爪.png" mode="scaleToFill" />
       <text>{{item.popularity + (item.photo_count_total? item.photo_count_total * photoPopWeight: 0) }}</text>
+
+      </view>
     </view>
   </view>
 </view>

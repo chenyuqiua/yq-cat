@@ -37,7 +37,6 @@ Page({
    */
   data: {
     cats: [],
-
     filters: [],
     filters_sub: 0, // 过滤器子菜单
     filters_legal: true, // 这组过滤器是否合法
@@ -335,6 +334,9 @@ Page({
     var new_cats = (await cat.where(query).orderBy('mphoto', 'desc').orderBy('popularity', 'desc').skip(cats.length).limit(20).get()).data
     new_cats = shuffle(new_cats);
 
+  
+
+
     if (loadingLock != nowLoadingLock) {
       // 说明过期了
       console.log(`过期了 ${loadingLock}, ${nowLoadingLock}`)
@@ -363,12 +365,23 @@ Page({
       }
     }
     new_cats = cats.concat(new_cats);
+
+    
+    
     await this.setData({
       cats: new_cats,
       loading: false,
       loadnomore: Boolean(new_cats.length === this.data.catsMax)
     });
     await this.loadCatsPhoto();
+
+    await sleep(1000);
+    this.setData({
+      updateRequest: false,
+    });
+    // 关闭下拉刷新窗口     如果没有调用下拉刷新窗口，直接关闭也不会报错
+    wx.stopPullDownRefresh()
+    
   },
 
   async loadCatsPhoto() {
@@ -376,7 +389,6 @@ Page({
     const nowLoadingLock = loadingLock;
 
     const cats = this.data.cats;
-
     var cat2photos = {};
     var cat2commentCount = {};
     for (var cat of cats) {
@@ -942,5 +954,17 @@ Page({
   // campus过滤器取cache
   getFCampusCache: function () {
     return cache.getCacheItem("genealogy-fcampus");
+  },
+
+   // 下拉刷新
+    onPullDownRefresh(){
+    // 重置数组
+    this.setData({
+      cats:[],
+      updateRequest: true,
+  })
+  // 重新获取猫猫信息
+    this.loadMoreCats()
   }
+ 
 })

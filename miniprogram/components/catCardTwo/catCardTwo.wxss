@@ -18,6 +18,15 @@
   border-radius: 15rpx;
   object-fit: cover;
 }
+.card1 .card1_left .goods-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 .card1 .card1_right {
   width: 55%;
   margin-left: 30rpx;
@@ -93,7 +102,12 @@
   margin-right: 20rpx;
   margin-top: 2rpx;
 }
-.card1 .card1_right .card1_right_4 view:nth-child(2) image {
+
+.card1 .card1_right .card1_right_4 .img-wrap {
+  display: flex;
+  align-items: center;
+}
+.card1 .card1_right .card1_right_4 .img-wrap .image {
   width: 30rpx;
   height: 28rpx;
 }

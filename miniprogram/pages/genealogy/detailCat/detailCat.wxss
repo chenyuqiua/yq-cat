@@ -107,8 +107,8 @@ swiper-item image {
   color: var(--color-black-light);
 }
 .comment image {
-  height: 30rpx;
-  width: 27rpx;
+  height: 28rpx;
+  width: 30rpx;
 }
 
 .tags {

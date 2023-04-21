@@ -108,9 +108,10 @@ Page({
     },
 
     async removeNews() {
-      if (this.data.auth == false) {
-        return;
-      }
+      console.log("11")
+      // if (this.data.auth == false) {
+      //   return;
+      // }
       
       var modalRes = await wx.showModal({
         content: '确定要删除吗？'

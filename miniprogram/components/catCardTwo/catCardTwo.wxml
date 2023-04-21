@@ -2,7 +2,8 @@
 <view class="card1" wx:for="{{cats}}" wx:key="_id"
  bindtap='clickCatCard' bindlongpress='bindManageCat' data-cat_id='{{item._id}}' data-index='{{index}}'>
   <view class="card1_left">
-    <image src="{{item.photo.photo_id}}" mode="" />
+    <!-- <image src="{{item.photo.photo_id}}" mode="" /> -->
+    <view class="goods-img" style="background-image: url({{item.photo.photo_id}});" />
   </view>
   <view class="card1_right">
     <view class="card1_right_1">
@@ -37,11 +38,9 @@
       <view>
         <text class='adopt'>{{adopt_desc[item.adopt]}}</text>
       </view>
-      <!-- <text bindtap='clickCatCar'>寻找领养中</text> -->
-      <view>
-      <image src="/pages/public/images/card/card/猫爪.png" mode="scaleToFill" />
-      <text>{{item.popularity + (item.photo_count_total? item.photo_count_total * photoPopWeight: 0) }}</text>
-
+      <view class="img-wrap">
+        <image class="image" src="https://oss.laf.run/l166io-cat/debug/猫爪.png" mode="scaleToFill" />
+        <text>{{item.popularity + (item.photo_count_total? item.photo_count_total * photoPopWeight: 0) }}</text>
       </view>
     </view>
   </view>

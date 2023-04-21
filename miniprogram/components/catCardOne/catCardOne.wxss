@@ -148,8 +148,8 @@
   align-items: center;
 }
 .comment image {
-  height: 27rpx;
-  width: 27rpx;
+  height: 33rpx;
+  width: 35rpx;
   margin-right: 8rpx;
 }
 

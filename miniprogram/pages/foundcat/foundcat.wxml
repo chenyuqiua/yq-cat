@@ -2,7 +2,7 @@
   <homeSwiper />
   <catCardOne cats="{{cats}}" adopt_desc="{{adopt_desc}}" cats_max="{{catsMax + 1}}" />
 
-  <view class='loading' wx:if='{{!loadnomore}}'>
+  <view class='loading' wx:if='{{loadnomore}}'>
     <image src='/pages/public/images/system/loading.gif'></image>
   </view>
   <view class='loadnomore' wx:else>

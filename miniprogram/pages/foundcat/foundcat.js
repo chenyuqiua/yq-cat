@@ -276,7 +276,7 @@ Page({
     const _ = db.command;
     const query = this.fGet();
     var new_cats = (await cat.where({
-      popularity: _.gt(10),
+      popularity: _.gt(100),
       ...query
     }).orderBy('mphoto', 'desc').orderBy('popularity', 'desc').skip(cats.length).limit(step).get()).data
     new_cats = shuffle(new_cats);

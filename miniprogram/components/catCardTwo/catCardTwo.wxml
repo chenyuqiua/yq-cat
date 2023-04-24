@@ -39,7 +39,7 @@
         <text class='adopt'>{{adopt_desc[item.adopt]}}</text>
       </view>
       <view class="img-wrap">
-        <image class="image" src="https://oss.laf.run/l166io-cat/debug/猫爪.png" mode="scaleToFill" />
+        <image class="image" src="/pages/public/images/card/card/猫爪.png" mode="scaleToFill" />
         <text>{{item.popularity + (item.photo_count_total? item.photo_count_total * photoPopWeight: 0) }}</text>
       </view>
     </view>

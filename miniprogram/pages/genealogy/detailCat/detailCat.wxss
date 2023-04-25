@@ -62,7 +62,7 @@ swiper-item image {
 .info .identity {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 30rpx;
 }
 
@@ -86,9 +86,11 @@ swiper-item image {
 }
 
 .info .popularity {
+  display: flex;
+  align-items: center;
   margin-left: auto;
   order: 2;
-  display: inline;
+  /* display: inline; */
   font-size: 22rpx;
   letter-spacing: 1rpx;
   color: var(--color-black-light);
@@ -96,12 +98,14 @@ swiper-item image {
 .popularity image {
   height: 28rpx;
   width: 30rpx;
+  margin-right: 6rpx;
 }
 
 .info .comment {
+  display: flex;
+  align-items: center;
   margin-left: 10rpx;
   order: 2;
-  display: inline;
   font-size: 22rpx;
   letter-spacing: 1rpx;
   color: var(--color-black-light);
@@ -109,6 +113,7 @@ swiper-item image {
 .comment image {
   height: 28rpx;
   width: 30rpx;
+  margin-right: 6rpx;
 }
 
 .tags {

@@ -28,7 +28,7 @@
           <image src='/pages/public/images/card/card/猫爪.png'></image>
           <text> {{item.popularity + (item.photo_count_total? item.photo_count_total * photoPopWeight: 0) }}</text>
         </view>
-        <view class='comment' >
+        <view class='comment'>
           <image src='/pages/public/images/card/card/comment.png'></image>
           <text> {{item.comment_count}}</text>
         </view>

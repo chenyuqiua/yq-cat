@@ -1,21 +1,15 @@
-// *** 修改指引 *** //
-// 只修改双引号内部的文字，不要修改没有双引号包裹的文字，否则会导致程序出错！
-// 不要删除设置项，例如识猫页，删除会导致编译出错！
-// 修改时频繁保存、频繁编译，发现改错了立马撤销
-
 module.exports = {
   // 版本号
-  app_version: "v1.0.0",
+  app_version: "v1.0.1",
   // laf后台服务地址
-  // laf_url: 'https://rb6lpz.lafyun.com:443',
-  // laf_url: 'https://l166io.laf.run',
-  laf_dev_url: 'https://ztr5if.laf.run',
+  // laf_url: 'https://rb6lpz.lafyun.com:443', // 体验版服务器 2023.6.31到期
+  // laf_url: 'https://l166io.laf.run', // 体验实例 2023.5.14到期
+  laf_url: 'https://ztr5if.laf.run',
   // laf后台服务地址
-  // laf_dev_url: 'https://rb6lpz.lafyun.com:443',
-  // laf_dev_url: 'https://l166io.laf.run',
+  // laf_dev_url: 'https://rb6lpz.lafyun.com:443', // 体验版服务器 2023.6.31到期
+  // laf_dev_url: 'https://l166io.laf.run', // 体验实例 2023.5.14到期
   laf_dev_url: 'https://ztr5if.laf.run',
   // 使用私有的腾讯云cos存储，需要url签名
-  // use_private_tencent_cos: false,
   use_private_tencent_cos: true,
 
   // 科普页图片

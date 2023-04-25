@@ -28,11 +28,11 @@
         <image mode='aspectFill' class='gender' wx:if='{{cat.gender === "母"}}' src="/pages/public/images/card/card/female.png"></image>
       </block>
       <view class='popularity' bindtap="showPopularityTip" wx:if="{{cat.popularity != undefined}}">
-        <image src='https://oss.laf.run/l166io-cat/debug/猫爪.png'></image>
+        <image src='/pages/public/images/card/card/猫爪.png'></image>
         <text> {{cat.popularity + (cat.photo_count_total? cat.photo_count_total * photoPopWeight: 0)}}</text>
       </view>
       <view class='comment' bindtap="showCommentTip" wx:if="{{cat.comment_count != undefined}}">
-        <image src='https://oss.laf.run/l166io-cat/debug/评论.png'></image>
+        <image src='/pages/public/images/card/card/评论.png'></image>
         <text> {{cat.comment_count || 0}}</text>
       </view>
     </view>

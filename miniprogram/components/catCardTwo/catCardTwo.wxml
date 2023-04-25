@@ -3,7 +3,7 @@
  bindtap='clickCatCard' bindlongpress='bindManageCat' data-cat_id='{{item._id}}' data-index='{{index}}'>
   <view class="card1_left">
     <!-- <image src="{{item.photo.photo_id}}" mode="" /> -->
-    <view class="goods-img" style="background-image: url({{item.photo.photo_id}});" />
+    <view class="goods-img" style="background-image: url({{item.photo.photo_compressed ? item.photo.photo_compressed : item.photo.photo_id}});" />
   </view>
   <view class="card1_right">
     <view class="card1_right_1">

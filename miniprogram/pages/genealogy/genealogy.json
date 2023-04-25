@@ -4,6 +4,5 @@
     "catCardTwo": "/components/catCardTwo/catCardTwo",
     "homeSwiper": "/components/homeSwiper/homeSwiper"
   },
-  "disableScroll": true,
   "enablePullDownRefresh": true
 }

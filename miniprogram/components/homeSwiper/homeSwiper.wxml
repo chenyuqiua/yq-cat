@@ -1,5 +1,7 @@
-<swiper indicator-dots="1" indicator-active-color="var(--color-primary)" circular="1" autoplay="true" interval="4000" duration="1000">
-  <swiper-item wx:for="{{images}}" wx:key="unique" bindtap='gotoSciDetail' data-cate='{{index}}'>
-    <image src='{{item}}'></image>
-  </swiper-item>
-</swiper>
+<block wx:if="{{images}}">
+  <swiper indicator-dots="1" indicator-active-color="var(--color-primary)" circular="1" autoplay="true" interval="4000" duration="1000">
+    <swiper-item wx:for="{{images}}" wx:key="unique" bindtap='gotoSciDetail' data-cate='{{index}}'>
+      <image src='{{item}}'></image>
+    </swiper-item>
+  </swiper>
+</block>

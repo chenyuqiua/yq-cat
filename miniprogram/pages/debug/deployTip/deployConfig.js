@@ -140,7 +140,7 @@ const init_setting = [{
     "_id": "friendLink",
     "apps": [{
       "appid": "wx5bd705b2bc91c73b",
-      "logo": "https://maopu-1251740905.cos.ap-guangzhou.myqcloud.com/public/zdmp_logo.png",
+      "logo": "/pages/public/images/system/zdmp.png",
       "name": "中大猫谱"
     }]
   },
@@ -160,17 +160,6 @@ const init_setting = [{
   },
 ];
 
-const init_app_secret = [{
-  "_id": "app_secret",
-  "MP_APPID": "your_mp_appid",
-  "MP_SECRET": "your_mp_secret",
-  "LAF_PORT": 443,
-  "LAF_OSS_URL": "oss.lafyun.com",
-  "LAF_BUCKET": "your_oss_bucket",
-  "OSS_SECRET_ID": "",
-  "OSS_SECRET_KEY": "",
-}];
-
 // 部署流程（不要修改！）
 module.exports = {
   // 云函数的名称
@@ -182,7 +171,7 @@ module.exports = {
     deployTest: "v1.0",
     getAccessToken: "v1.0",
     getAllSci: "v1.0",
-    getAppSecret: "v1.0",
+    getAppSecret: "v1.1",
     getMpCode: "v1.0",
     getPhotoRank: "v1.0",
     getURL: "v1.0",
@@ -191,12 +180,12 @@ module.exports = {
     login: "v1.0",
     managePhoto: "v1.0",
     sendMsgV2: "v1.0",
+    timeTriggers: "v1.0",
     updateCat: "v1.0",
     userOp: "v1.0",
   },
   default_init_data_id: default_init_data_id,
   collections: {
-    "app_secret": init_app_secret,
     "cat": default_init_data,
     "comment": default_init_data,
     "feedback": default_init_data,

@@ -17,6 +17,10 @@ page {
   font-size: 30rpx;
 }
 
+.bottom {
+  height: 70rpx;
+}
+
 .basic-info {
   padding: 30rpx;
 }
@@ -103,6 +107,16 @@ image {
 
 .buttons button {
   display: inline;
+}
+
+.primary-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.primary {
+  margin: 35rpx 0 15rpx;
 }
 
 /* .inputInfo {

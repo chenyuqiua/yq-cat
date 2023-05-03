@@ -92,9 +92,16 @@ page {
   width: 690rpx;
 }
 /* 保存 */
-.primary {
-  width: 690rpx;
-  margin: 0 30rpx;
+.primarl-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+button.primary {
+  width: 600rpx;
+  margin-left: 0;
+  margin: 0 auto;
 }
 
 /* 底部搜索猫猫 */
